@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import { startRouterService } from './services/router-service';
 
 const app = express();
-const PORT = 3000;
+const port = process.env.PORT || 3000;
 dotenv.config();
 
 app.listen(PORT, () => {
